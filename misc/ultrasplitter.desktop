@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ultra Splitter
+Comment=Programme pour diviser les fichiers
+Exec=ultrasplitter
+Icon=ultrasplitter.png
+Terminal=false
+Type=Application
+Categories=Application;Utility;X-Fedora

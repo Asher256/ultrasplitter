@@ -1,0 +1,6 @@
+#!/bin/sh
+echo Fixation du Makefile pour linux...
+echo cp misc/Makefile.lnx .
+cp misc/Makefile.lnx ./Makefile
+echo Maintenant, tapez "make" puis "make install"....
+echo

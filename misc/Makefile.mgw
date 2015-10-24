@@ -1,0 +1,17 @@
+PREFIX = 
+CFLAGS = -DWIN32 -O2 -s -mwindows
+LIBS = -lfltk -mwindows -luuid -lole32 -lcomctl32 -lwsock32
+EXE = UltraSplitter.exe
+OBJ_DIR = obj/mingw
+
+CC = g++
+RM = rm -f
+CP = cp
+
+RES=$(OBJ_DIR)/usplit.res
+
+include misc/Makefile.all
+
+$(OBJ_DIR)/usplit.res : $(SRC_DIR)/usplit.rc
+	windres -i $(SRC_DIR)/usplit.rc -I rc -o $(OBJ_DIR)/usplit.res -O coff
+

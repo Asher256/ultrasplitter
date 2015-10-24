@@ -1,0 +1,52 @@
+# lis la configuration
+include CONFIG.mak
+
+ifeq ($(FLU),yes)
+	CFLAGS = `flu-config --cxxflags` -DUSE_FLU
+	LIBS   = `flu-config --libs`
+endif
+
+CFLAGS += -DLINUX -O2 `fltk-config --cxxflags` 
+LIBS += -static-libgcc `fltk-config --ldstaticflags`
+
+ifeq ($(PREFIX),)
+PREFIX = /usr
+endif
+EXE = ultrasplitter
+OBJ_DIR = obj/linux
+RES =
+
+ifeq ($(NEW_CC),)
+CC = g++
+else
+CC:=$(NEW_CC)
+endif
+
+RM = rm -f
+CP = cp
+
+include misc/Makefile.all
+
+install :
+	mkdir -p $(PREFIX)/bin
+	mkdir -p $(PREFIX)/share/applications $(PREFIX)/share/pixmaps
+	mkdir -p $(PREFIX)/share/doc/ultrasplitter/html
+	$(CP) $(EXE) $(PREFIX)/bin
+	$(CP) LISEZMOI.txt COPYING.txt COPYING-FR.txt $(PREFIX)/share/doc/ultrasplitter
+	$(CP) doc/* $(PREFIX)/share/doc/ultrasplitter/html
+	$(CP) misc/ultrasplitter.desktop $(PREFIX)/share/applications
+	$(CP) misc/ultrasplitter.png $(PREFIX)/share/pixmaps
+	chmod 755 $(PREFIX)/bin/$(EXE)
+	chmod 755 $(PREFIX)/share/doc/ultrasplitter
+	chmod 755 $(PREFIX)/share/doc/ultrasplitter/html
+	chmod 644 $(PREFIX)/share/doc/ultrasplitter/*.txt
+	chmod 644 $(PREFIX)/share/doc/ultrasplitter/html/*
+	chmod 644 $(PREFIX)/share/applications/ultrasplitter.desktop
+	chmod 644 $(PREFIX)/share/pixmaps/ultrasplitter.png
+
+uninstall :
+	$(RM) $(PREFIX)/bin/$(EXE)
+	$(RM) -r $(PREFIX)/share/doc/ultrasplitter
+	$(RM) $(PREFIX)/share/applications/ultrasplitter.desktop $(PREFIX)/share/pixmaps/ultrasplitter.png
+
+

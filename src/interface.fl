@@ -1,0 +1,121 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0107 
+header_name {.h} 
+code_name {.cpp}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window {} {
+      label {Ultra Splitter 3.2} selected
+      xywh {356 274 310 315} type Double selection_color 15 align 0 when 1 visible
+    } {
+      Fl_Box titre {
+        label {Ultra Splitter}
+        xywh {66 16 178 30} labeltype EMBOSSED_LABEL labelfont 1 labelsize 24 labelcolor 136
+      }
+      Fl_Box taille_fichier {
+        xywh {154 55 105 15} labelsize 10 align 26
+      }
+      Fl_Output fichier {
+        label {Fichier à Diviser:}
+        xywh {25 71 235 23} color 215 labelfont 1 labelsize 12 labelcolor 136 align 5 textsize 12
+      }
+      Fl_Button btn_browse_file {
+        label {...}
+        tooltip {Parcourir pour trouver le fichier... Racourcis: CTRL-O} xywh {264 71 23 23} box ROUND_UP_BOX shortcut 0x4006f labelfont 1 labelsize 11
+      }
+      Fl_Output chemin {
+        label {Chemin des divisions:}
+        xywh {25 111 235 23} color 215 labelfont 1 labelsize 12 labelcolor 136 align 5 textsize 12
+      }
+      Fl_Button btn_browse_dir {
+        label {...}
+        tooltip {Choisir le répertoire... Racourcis: CTRL-d} xywh {264 111 23 23} box ROUND_UP_BOX shortcut 0x40064 labelfont 1 labelsize 11
+      }
+      Fl_Box {} {
+        xywh {25 152 260 70} box ENGRAVED_BOX
+      }
+      Fl_Box label_taille_division {
+        label {Taille d'une division:}
+        xywh {31 145 154 15} box FLAT_BOX labelfont 1 labelsize 12 labelcolor 136 align 21
+      }
+      Fl_Round_Button check1 {
+        label {Taille &prédéfinie:}
+        xywh {32 166 122 19} type Radio down_box ROUND_DOWN_BOX value 1 labelsize 12
+      }
+      Fl_Choice combo_taille {
+        xywh {156 166 121 21} box UP_BOX down_box DOWN_BOX color 207 labelsize 12 textsize 12
+      } {}
+      Fl_Round_Button check2 {
+        label {Autre &Taille:}
+        xywh {32 191 122 19} type Radio down_box ROUND_DOWN_BOX labelsize 12
+      }
+      Fl_Input taille {
+        xywh {156 191 67 21} type Float color 207 labelsize 12 textsize 12
+      }
+      Fl_Choice combo_mesure {
+        xywh {228 191 49 21} down_box BORDER_BOX color 207 labelsize 12 textsize 12
+      } {}
+      Fl_Check_Button rassembler {
+        label {Rassembler des divisions}
+        tooltip {Choisir si l'on doit diviser ou rassembler des fichiers...} xywh {25 233 260 30} box ENGRAVED_BOX down_box DOWN_BOX labelsize 12
+      }
+      Fl_Button btn_split {
+        label {&Diviser}
+        xywh {102 273 103 24} box ROUND_UP_BOX color 136 selection_color 40 labelfont 1 labelsize 12 labelcolor 7
+      }
+      Fl_Button btn_quitter {
+        label {&Quitter}
+        tooltip {Quitter le logiciel...} xywh {24 273 73 24} box ROUND_UP_BOX labelsize 12
+      }
+      Fl_Button btn_about {
+        label {&A propos}
+        tooltip {Quelques informations sur le programme...} xywh {210 273 75 24} box ROUND_UP_BOX labelfont 2 labelsize 12
+      }
+    }
+  }
+  Function {make_about()} {open
+  } {
+    Fl_Window {} {
+      label {A propos du logiciel...} open
+      xywh {247 52 330 420} type Double hide modal
+    } {
+      Fl_Box {} {
+        label {Ultra Splitter est un logiciel libre.
+Vous avez le droit de l'utiliser, le distribuer, étudier son code source et l'améliorer selon les termes de la GNU General Public licence (version 2 ou ultérieure. Selon votre convenance).
+
+Lisez le fichier COPYING.txt ou COPYING-FR.txt pour plus d'informations.}
+        xywh {13 112 307 146} box SHADOW_BOX color 7 labelsize 11 align 208
+      }
+      Fl_Button about_button {
+        label {&Fermer}
+        xywh {117 383 95 23} box ROUND_UP_BOX labelsize 12
+      }
+      Fl_Box {} {
+        label UltraSplitter
+        xywh {96 11 138 25} color 29 labeltype EMBOSSED_LABEL labelfont 1 labelsize 18 labelcolor 136
+      }
+      Fl_Box {} {
+        label {Copyright (c) Asher256}
+        xywh {30 57 269 15} color 29 labelfont 1 labelsize 12 align 16
+      }
+      Fl_Box {} {
+        label {Version 3.2}
+        xywh {132 35 65 15} labelfont 1 labelsize 10 labelcolor 59
+      }
+      Fl_Box {} {
+        label { Ce programme est la mise à jour du précédent Ultra Splitter fait en QuickBasic. L'ancienne version ne contenait pas d'interface graphique et ne marchait que sous DOS. Cette version marche sur deux systèmes d'exploitations: Windows et GNU/Linux. }
+        xywh {13 263 307 104} box RSHADOW_BOX color 96 labelsize 11 labelcolor 7 align 212
+      }
+      Fl_Box {} {
+        label {contact@asher256.com}
+        xywh {102 74 126 13} color 29 labelsize 10 labelcolor 112 align 16
+      }
+      Fl_Box {} {
+        label {http://usplit.asher256.com}
+        xywh {54 89 222 13} color 29 labelfont 1 labelsize 12 labelcolor 4 align 16
+      }
+    }
+  }
+} 

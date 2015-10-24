@@ -1,0 +1,27 @@
+#===================================================#
+# Fichier makefile principal
+# Qui peut compiler soit linux soit 
+# Mingw.
+#===================================================#
+
+SRC_DIR=src
+
+# vpath
+vpath %.cpp $(SRC_DIR)
+vpath %.o $(OBJ_DIR)
+
+# les fichiers objet
+OBJS = Fl_Nice.o interface.o usplit.o
+
+all: $(OBJS) $(RES) $(EXE) 
+
+%.o : %.cpp
+	$(CC) -c $< $(CFLAGS) -o $(OBJ_DIR)/$@
+
+$(EXE) : $(OBJS) $(RES)
+	$(CC) $(addprefix $(OBJ_DIR)/, $(OBJS)) $(RES) -o $(EXE) $(LIBS)
+
+clean :
+	$(RM) $(addprefix $(OBJ_DIR)/, $(OBJS)) 
+	$(RM) $(EXE)
+

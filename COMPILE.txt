@@ -1,0 +1,24 @@
+Pour compiler Ultra Splitter sous GNU/Linux:
+--------------------------------------------
+Vous avez besoin des bibliotheques suivantes:
+* Fltk (http://www.fltk.org)
+* FLU (http://www.osc.edu/~jbryan/FLU/)
+
+Si vous avez toutes les dependences, vous pouvez
+compiler le logiciel:
+$ ./fixlinux.sh
+$ make
+
+Vous pouvez l'installer avec: make install
+
+Pour compiler Ultra Splitter sous Windows:
+--------------------------------------------
+Vous avez besoin du compilateur Mingw32.
+
+Vous devez aussi avoir telecharge et installe la
+bibliotheque fltk (http://www.fltk.org).
+
+Pour compiler le logiciel, lancez les commandes suivantes:
+$ fixmingw.bat
+$ make
+
