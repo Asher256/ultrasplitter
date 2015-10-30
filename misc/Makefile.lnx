@@ -2,11 +2,11 @@
 include CONFIG.mak
 
 ifeq ($(FLU),yes)
-	CFLAGS = `flu-config --cxxflags` -DUSE_FLU
+	CFLAGS = `flu-config --cxxflags` -DUSE_FLU 
 	LIBS   = `flu-config --libs`
 endif
 
-CFLAGS += -DLINUX -O2 `fltk-config --cxxflags` 
+CFLAGS += -DLINUX -O2 `fltk-config --cxxflags` -Wno-format-security -Wno-write-strings
 LIBS += -static-libgcc `fltk-config --ldstaticflags`
 
 ifeq ($(PREFIX),)
