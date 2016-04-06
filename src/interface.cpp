@@ -167,7 +167,7 @@ itations: Windows et GNU/Linux. ");
       o->labelcolor(FL_BACKGROUND2_COLOR);
       o->align(196|FL_ALIGN_INSIDE);
     }
-    { Fl_Box* o = new Fl_Box(102, 74, 126, 13, "contact@asher256.com");
+    { Fl_Box* o = new Fl_Box(102, 74, 126, 13, "asher256@gmail.com");
       o->color((Fl_Color)29);
       o->labelsize(10);
       o->labelcolor((Fl_Color)112);

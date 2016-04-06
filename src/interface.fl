@@ -109,7 +109,7 @@ Lisez le fichier COPYING.txt ou COPYING-FR.txt pour plus d'informations.}
         xywh {13 263 307 104} box RSHADOW_BOX color 96 labelsize 11 labelcolor 7 align 212
       }
       Fl_Box {} {
-        label {contact@asher256.com}
+        label {asher256@gmail.com}
         xywh {102 74 126 13} color 29 labelsize 10 labelcolor 112 align 16
       }
       Fl_Box {} {

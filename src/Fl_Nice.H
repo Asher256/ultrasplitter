@@ -2,7 +2,7 @@
 // pour des infos voir X_File_Chooser.cxx
 // 
 // Fl_Nice.* by Asher256 
-// Email: contact@asher256.com
+// Email: asher256@gmail.com
 //================================================
 
 #if !defined(LINUX) && !defined(WIN32)

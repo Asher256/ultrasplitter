@@ -1,2 +1,53 @@
-# ultrasplitter
-UltraSplitter permet de diviser vos fichiers en plusieurs morceaux (pour les rassember par la suite)
+# Ultra Splitter
+
+Auteur: Asher256
+Github: https://github.com/Asher256/ultrasplitter
+
+## Copyright et disclaimer:
+
+Ultra Splitter est distribué selon les termes de la GNU General Public
+Licence v2 (ou ultérieure selon votre convenance). Vous pouvez étudier, 
+distribuer ou améliorer son code source. 
+Lisez le fichier COPYING.txt et COPYING-FR.txt pour plus d'informations.
+
+Il n'est distribué sans AUCUNE GARANTIE. Bien que ce programme a été
+testé et retesté plusieurs fois L'auteur décline toute responsabilité quand à 
+une erreur qui pourrait se glisser dans le programme.
+
+## Informations:
+
+Ceci est un logiciel servant à diviser des fichiers en plusieurs morceaux
+pour les mettre dans des supports comme des disquettes, des CDs... On
+peux par la suite les déplacer puis les rassembler à la fin (avec le même 
+programme...).
+
+On pourrait déplacer l'image d'un DVD sur plusieurs CDs ou encore un
+CD en plusieurs morceaux déplacé avec un petit stylo mémoire de 64 MO (cela
+fait environ 11 divisions...).
+
+Ce logiciel m'a été très utile lors du déplacement de fichiers dépassant une 
+disquette 1.44 Mo d'ordinateurs distants ne disposant pas de réseau (local et
+internet). 
+
+Ce logiciel est la mise à jour d'un d'un de mes anciens programmes faits en 
+quick basic. L'ancienne version se trouve dans http://www.qbworld.fr.st/.
+Les précédentes versions n'ont pas d'interface graphique et n'acceptent 
+pas les noms longs. Cette version a une interface conviviale, accepte les noms
+longs, divise et rassemble les fichier et est portable. Elle existe sous deux 
+systèmes d'exploitation: GNU/Linux et Windows.
+
+## Besoins du logiciel (version binaire)
+
+Sous Linux le programme a besoin de libc version 6 et X11 version 6 la 
+majorité des distributions on ont...
+Sous windows, le programme n'as besoin d'aucune DLL spécifique tout ce
+donc il a besoin est distribué avec le système.
+
+## Ou se procurer le programme?
+
+* Code source: https://github.com/Asher256/ultrasplitter
+* Site web: http://usplit.asher256.com/
+
+## Contact:
+Si vous voulez contacter l'auteur si vous aimez le programme, si vous avez des
+questions ou des bogues à signaler: asher256@gmail.com

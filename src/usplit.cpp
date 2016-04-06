@@ -9,7 +9,7 @@
  * -----------------------------------------------------------
  *
  * Auteur:  Asher256
- * Contact: contact@asher256.com
+ * Contact: asher256@gmail.com
  *
  *------------------------------------------------------------------
  * Ce code source est distribué selon les termes de la licence

@@ -11,7 +11,7 @@
 // il utilise les bonne fonctions de FLU.
 //
 // Auteur: Asher256 
-// contact@asher256.com
+// asher256@gmail.com
 //
 // Quelques defines:
 // =================

@@ -3,7 +3,7 @@ Name: ultrasplitter
 Version: 3.2
 Release: 1
 License: GPL
-Packager: Asher256 <contact@asher256.com>
+Packager: Asher256 <asher256@gmail.com>
 Group: Applications/File
 Source0: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -42,6 +42,6 @@ rm -fr $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/ultrasplitter.png
 
 %changelog
-* Sun Nov 6 2005 Asher256 <contact@asher256.com> 3.1 
+* Sun Nov 6 2005 Asher256 <asher256@gmail.com> 3.1 
 - First version of the .spec
 
